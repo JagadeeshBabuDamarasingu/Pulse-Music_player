@@ -18,6 +18,8 @@
   </a>
 </p>
 
+If you liked this repo, fork it and leave a STAR. Your support means a lot!
+
 ## Screenshots
 | <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" width="200"/> | <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" width="200"/> | <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" width="200"/> | <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/7.png" width="200"/> |
 |:---:|:---:|:---:|:---:|
