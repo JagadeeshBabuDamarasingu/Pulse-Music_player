@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/home_top_content" />
+
+        <ViewStub
+            android:id="@+id/stub_top_albums_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout="@layout/home_category_title" />
+
+        <ViewStub
+            android:id="@+id/stub_top_albums_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/home_category_list" />
+
+        <ViewStub
+            android:id="@+id/stub_suggestions_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout="@layout/home_category_title" />
+
+        <ViewStub
+            android:id="@+id/stub_suggested_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/home_category_list" />
+
+        <ViewStub
+            android:id="@+id/stub_new_in_store_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout="@layout/home_category_title" />
+
+        <ViewStub
+            android:id="@+id/stub_new_in_store_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/home_category_list"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp" />
+
+        <ViewStub
+            android:id="@+id/stub_top_artists_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout="@layout/home_category_title" />
+
+        <ViewStub
+            android:id="@+id/stub_top_artists_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout="@layout/home_category_list" />
+
+        <ViewStub
+            android:id="@+id/stub_no_tracks_found"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/empty_tracks_text" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

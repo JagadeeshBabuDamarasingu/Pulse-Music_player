@@ -1,0 +1,63 @@
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.3'
+
+    defaultConfig {
+        applicationId "com.hardcodecoder.pulsemusic"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 210030000
+        versionName "3.0.0"
+        vectorDrawables.useSupportLibrary = true
+        resConfig 'en'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            versionNameSuffix "-Debug"
+            buildConfigField "String", "BUILD_DATE", getBuildTime()
+        }
+        release {
+            versionNameSuffix "-Release"
+            buildConfigField "String", "BUILD_DATE", getBuildTime()
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+private static String getBuildTime() {
+    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEEE d MMMM yyyy HH:mm:ss")
+    LocalDateTime now = LocalDateTime.now()
+    String dateTime = dtf.format(now)
+    return "\"${dateTime}\""
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'androidx.media:media:1.1.0'
+    implementation 'com.google.android.material:material:1.2.0'
+
+    annotationProcessor 'androidx.annotation:annotation:1.1.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

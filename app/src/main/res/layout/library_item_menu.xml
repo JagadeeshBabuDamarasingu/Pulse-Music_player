@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/track_play_next"
+        style="@style/BottomDialogOptionsMenuTextStyle"
+        android:text="@string/play_next" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/add_to_queue"
+        style="@style/BottomDialogOptionsMenuTextStyle"
+        android:text="@string/add_to_queue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/add_to_playlist"
+        style="@style/BottomDialogOptionsMenuTextStyle"
+        android:text="@string/add_to_playlist" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/song_info"
+        style="@style/BottomDialogOptionsMenuTextStyle"
+        android:text="@string/info" />
+</LinearLayout>
