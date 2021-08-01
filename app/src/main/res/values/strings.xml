@@ -217,9 +217,9 @@
     <string name="about_check_source_code">Source on github</string>
 
     <!-- Profile Links -->
-    <string name="profile_icon_link"></string>
+    <string name="profile_icon_link">https://twitter.com/Shrthshr1/photo</string>
     <string name="social_links">Social links</string>
-    <string name="github_link">https://github.com/Sharath16113</string>
+    <string name="github_link">https://github.com/Sharath16113/Pulse-Music_player</string>
     <string name="source_code_link">https://github.com/Sharath16113/Pulse-Music_player</string>
     <string name="facebook_link">https://www.facebook.com/Sharath16113</string>
     <string name="twitter_link">https://www.twitter.com/Shrthshr1</string>

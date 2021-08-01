@@ -40,7 +40,7 @@ public class SettingsContributorsFragment extends Fragment {
         if (mListener instanceof SettingsActivity)
             mListener.setToolbarTitle(R.string.contributors);
 
-        view.findViewById(R.id.github_logo).setOnClickListener(v -> openLink("https://github.com/Sharath16113"));
+        view.findViewById(R.id.github_logo).setOnClickListener(v -> openLink("https://github.com/Sharath16113/Pulse-Music_player"));
 
 
         GlideApp.with(view)
@@ -52,7 +52,7 @@ public class SettingsContributorsFragment extends Fragment {
 
     private void openLink(@StringRes String linkId) {
         Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse("https:github.com/Sharath16113"));
+        i.setData(Uri.parse("https:github.com/Sharath16113/Pulse-Music_player"));
         startActivity(i);
     }
 }

@@ -51,7 +51,7 @@ public class SettingsAboutFragment extends Fragment {
 
         view.findViewById(R.id.about_card_github_link).setOnClickListener(v -> {
             Intent i = new Intent(Intent.ACTION_VIEW);
-            i.setData(Uri.parse("https://github.com/Sharath16113"));
+            i.setData(Uri.parse("https://github.com/Sharath16113/Pulse-Music_player"));
             startActivity(i);
         });
     }
