@@ -79,7 +79,7 @@ With 3 different dark themes to and several accents to choose from, customize yo
 - Option to change now playing screen album cover corner radius
 ## Releases
 [<img alt="Get it on Github" height="70" src="https://raw.githubusercontent.com/flocke/andOTP/master/assets/badges/get-it-on-github.png">](https://github.com/HardcodeCoder/PulseMusic/releases/)
-### Latest release: [Here](https://github.com/HardcodeCoder/PulseMusic/releases/latest/)
+### Latest release: [Here](https://github.com/Sharath16113/Pulse-Music_player/releases)
 
 IMPORTANT : *Please mention the steps to reproduce the bug while reporting. Providing logs will be really helpful*
 
